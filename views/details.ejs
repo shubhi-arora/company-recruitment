@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/styles1.css">
+</head>
+
+<body>
+
+  <section class="vh-100" style="background-color: #2779e2;">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-9">
+
+          <h1 class="text-white mb-4 heading">Apply for a job</h1>
+
+
+    <form action="/details" method="post">
+
+
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body">
+
+
+              <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Email:</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+                  <div class="input-group">
+                    <input type="text" class="form-control"  name="email" value="<%= Email %>" aria-label="Text input with dropdown button" required />
+
+                  </div>
+
+                </div>
+              </div>
+              <hr class="mx-n3">
+
+
+
+              <div class="row align-items-center py-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Country:</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="input-1" name="country" aria-label="Text input with dropdown button" value=" " required />
+                    <div class="input-group-append">
+
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
+                      <div class="dropdown-menu droplist-1 drop1" aria-labelledby="dropdownMenuButton">
+                        <option class="dropdown-item drop-1" value="Afghanistan">Afghanistan</option>
+                        <option class="dropdown-item drop-1" value="Albania">Albania</option>
+                        <option class="dropdown-item drop-1" value="Algeria">Algeria</option>
+                        <option class="dropdown-item drop-1" value="American Samoa">American Samoa</option>
+                        <option class="dropdown-item drop-1" value="Andorra">Andorra</option>
+                        <option class="dropdown-item drop-1" value="Angola">Angola</option>
+                        <option class="dropdown-item drop-1" value="Anguilla">Anguilla</option>
+                        <option class="dropdown-item drop-1" value="Antigua & Barbuda">Antigua & Barbuda</option>
+                        <option class="dropdown-item drop-1" value="Argentina">Argentina</option>
+                        <option class="dropdown-item drop-1" value="Armenia">Armenia</option>
+                        <option class="dropdown-item drop-1" value="Aruba">Aruba</option>
+                        <option class="dropdown-item drop-1" value="Australia">Australia</option>
+                        <option class="dropdown-item drop-1" value="Austria">Austria</option>
+                        <option class="dropdown-item drop-1" value="Azerbaijan">Azerbaijan</option>
+                        <option class="dropdown-item drop-1" value="Bahamas">Bahamas</option>
+                        <option class="dropdown-item drop-1" value="Bahrain">Bahrain</option>
+                        <option class="dropdown-item drop-1" value="Bangladesh">Bangladesh</option>
+                        <option class="dropdown-item drop-1" value="Barbados">Barbados</option>
+                        <option class="dropdown-item drop-1" value="Belarus">Belarus</option>
+                        <option class="dropdown-item drop-1" value="Belgium">Belgium</option>
+                        <option class="dropdown-item drop-1" value="Belize">Belize</option>
+                        <option class="dropdown-item drop-1" value="Benin">Benin</option>
+                        <option class="dropdown-item drop-1" value="Bermuda">Bermuda</option>
+                        <option class="dropdown-item drop-1" value="Bhutan">Bhutan</option>
+                        <option class="dropdown-item drop-1" value="Bolivia">Bolivia</option>
+                        <option class="dropdown-item drop-1" value="Bonaire">Bonaire</option>
+                        <option class="dropdown-item drop-1" value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                        <option class="dropdown-item drop-1" value="Botswana">Botswana</option>
+                        <option class="dropdown-item drop-1" value="Brazil">Brazil</option>
+                        <option class="dropdown-item drop-1" value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                        <option class="dropdown-item drop-1" value="Brunei">Brunei</option>
+                        <option class="dropdown-item drop-1" value="Bulgaria">Bulgaria</option>
+                        <option class="dropdown-item drop-1" value="Burkina Faso">Burkina Faso</option>
+                        <option class="dropdown-item drop-1" value="Burundi">Burundi</option>
+                        <option class="dropdown-item drop-1" value="Cambodia">Cambodia</option>
+                        <option class="dropdown-item drop-1" value="Cameroon">Cameroon</option>
+                        <option class="dropdown-item drop-1" value="Canada">Canada</option>
+                        <option class="dropdown-item drop-1" value="Canary Islands">Canary Islands</option>
+                        <option class="dropdown-item drop-1" value="Cape Verde">Cape Verde</option>
+                        <option class="dropdown-item drop-1" value="Cayman Islands">Cayman Islands</option>
+                        <option class="dropdown-item drop-1" value="Central African Republic">Central African Republic</option>
+                        <option class="dropdown-item drop-1" value="Chad">Chad</option>
+                        <option class="dropdown-item drop-1" value="Channel Islands">Channel Islands</option>
+                        <option class="dropdown-item drop-1" value="Chile">Chile</option>
+                        <option class="dropdown-item drop-1" value="China">China</option>
+                        <option class="dropdown-item drop-1" value="Christmas Island">Christmas Island</option>
+                        <option class="dropdown-item drop-1" value="Cocos Island">Cocos Island</option>
+                        <option class="dropdown-item drop-1" value="Colombia">Colombia</option>
+                        <option class="dropdown-item drop-1" value="Comoros">Comoros</option>
+                        <option class="dropdown-item drop-1" value="Congo">Congo</option>
+                        <option class="dropdown-item drop-1" value="Cook Islands">Cook Islands</option>
+                        <option class="dropdown-item drop-1" value="Costa Rica">Costa Rica</option>
+                        <option class="dropdown-item drop-1" value="Cote DIvoire">Cote DIvoire</option>
+                        <option class="dropdown-item drop-1" value="Croatia">Croatia</option>
+                        <option class="dropdown-item drop-1" value="Cuba">Cuba</option>
+                        <option class="dropdown-item drop-1" value="Curaco">Curacao</option>
+                        <option class="dropdown-item drop-1" value="Cyprus">Cyprus</option>
+                        <option class="dropdown-item drop-1" value="Czech Republic">Czech Republic</option>
+                        <option class="dropdown-item drop-1" value="Denmark">Denmark</option>
+                        <option class="dropdown-item drop-1" value="Djibouti">Djibouti</option>
+                        <option class="dropdown-item drop-1" value="Dominica">Dominica</option>
+                        <option class="dropdown-item drop-1" value="Dominican Republic">Dominican Republic</option>
+                        <option class="dropdown-item drop-1" value="East Timor">East Timor</option>
+                        <option class="dropdown-item drop-1" value="Ecuador">Ecuador</option>
+                        <option class="dropdown-item drop-1" value="Egypt">Egypt</option>
+                        <option class="dropdown-item drop-1" value="El Salvador">El Salvador</option>
+                        <option class="dropdown-item drop-1" value="Equatorial Guinea">Equatorial Guinea</option>
+                        <option class="dropdown-item drop-1" value="Eritrea">Eritrea</option>
+                        <option class="dropdown-item drop-1" value="Estonia">Estonia</option>
+                        <option class="dropdown-item drop-1" value="Ethiopia">Ethiopia</option>
+                        <option class="dropdown-item drop-1" value="Falkland Islands">Falkland Islands</option>
+                        <option class="dropdown-item drop-1" value="Faroe Islands">Faroe Islands</option>
+                        <option class="dropdown-item drop-1" value="Fiji">Fiji</option>
+                        <option class="dropdown-item drop-1" value="Finland">Finland</option>
+                        <option class="dropdown-item drop-1" value="France">France</option>
+                        <option class="dropdown-item drop-1" value="French Guiana">French Guiana</option>
+                        <option class="dropdown-item drop-1" value="French Polynesia">French Polynesia</option>
+                        <option class="dropdown-item drop-1" value="French Southern Ter">French Southern Ter</option>
+                        <option class="dropdown-item drop-1" value="Gabon">Gabon</option>
+                        <option class="dropdown-item drop-1" value="Gambia">Gambia</option>
+                        <option class="dropdown-item drop-1" value="Georgia">Georgia</option>
+                        <option class="dropdown-item drop-1" value="Germany">Germany</option>
+                        <option class="dropdown-item drop-1" value="Ghana">Ghana</option>
+                        <option class="dropdown-item drop-1" value="Gibraltar">Gibraltar</option>
+                        <option class="dropdown-item drop-1" value="Great Britain">Great Britain</option>
+                        <option class="dropdown-item drop-1" value="Greece">Greece</option>
+                        <option class="dropdown-item drop-1" value="Greenland">Greenland</option>
+                        <option class="dropdown-item drop-1" value="Grenada">Grenada</option>
+                        <option class="dropdown-item drop-1" value="Guadeloupe">Guadeloupe</option>
+                        <option class="dropdown-item drop-1" value="Guam">Guam</option>
+                        <option class="dropdown-item drop-1" value="Guatemala">Guatemala</option>
+                        <option class="dropdown-item drop-1" value="Guinea">Guinea</option>
+                        <option class="dropdown-item drop-1" value="Guyana">Guyana</option>
+                        <option class="dropdown-item drop-1" value="Haiti">Haiti</option>
+                        <option class="dropdown-item drop-1" value="Hawaii">Hawaii</option>
+                        <option class="dropdown-item drop-1" value="Honduras">Honduras</option>
+                        <option class="dropdown-item drop-1" value="Hong Kong">Hong Kong</option>
+                        <option class="dropdown-item drop-1" value="Hungary">Hungary</option>
+                        <option class="dropdown-item drop-1" value="Iceland">Iceland</option>
+                        <option class="dropdown-item drop-1" value="Indonesia">Indonesia</option>
+                        <option class="dropdown-item drop-1" value="India">India</option>
+                        <option class="dropdown-item drop-1" value="Iran">Iran</option>
+                        <option class="dropdown-item drop-1" value="Iraq">Iraq</option>
+                        <option class="dropdown-item drop-1" value="Ireland">Ireland</option>
+                        <option class="dropdown-item drop-1" value="Isle of Man">Isle of Man</option>
+                        <option class="dropdown-item drop-1" value="Israel">Israel</option>
+                        <option class="dropdown-item drop-1" value="Italy">Italy</option>
+                        <option class="dropdown-item drop-1" value="Jamaica">Jamaica</option>
+                        <option class="dropdown-item drop-1" value="Japan">Japan</option>
+                        <option class="dropdown-item drop-1" value="Jordan">Jordan</option>
+                        <option class="dropdown-item drop-1" value="Kazakhstan">Kazakhstan</option>
+                        <option class="dropdown-item drop-1" value="Kenya">Kenya</option>
+                        <option class="dropdown-item drop-1" value="Kiribati">Kiribati</option>
+                        <option class="dropdown-item drop-1" value="Korea North">Korea North</option>
+                        <option class="dropdown-item drop-1" value="Korea Sout">Korea South</option>
+                        <option class="dropdown-item drop-1" value="Kuwait">Kuwait</option>
+                        <option class="dropdown-item drop-1" value="Kyrgyzstan">Kyrgyzstan</option>
+                        <option class="dropdown-item drop-1" value="Laos">Laos</option>
+                        <option class="dropdown-item drop-1" value="Latvia">Latvia</option>
+                        <option class="dropdown-item drop-1" value="Lebanon">Lebanon</option>
+                        <option class="dropdown-item drop-1" value="Lesotho">Lesotho</option>
+                        <option class="dropdown-item drop-1" value="Liberia">Liberia</option>
+                        <option class="dropdown-item drop-1" value="Libya">Libya</option>
+                        <option class="dropdown-item drop-1" value="Liechtenstein">Liechtenstein</option>
+                        <option class="dropdown-item drop-1" value="Lithuania">Lithuania</option>
+                        <option class="dropdown-item drop-1" value="Luxembourg">Luxembourg</option>
+                        <option class="dropdown-item drop-1" value="Macau">Macau</option>
+                        <option class="dropdown-item drop-1" value="Macedonia">Macedonia</option>
+                        <option class="dropdown-item drop-1" value="Madagascar">Madagascar</option>
+                        <option class="dropdown-item drop-1" value="Malaysia">Malaysia</option>
+                        <option class="dropdown-item drop-1" value="Malawi">Malawi</option>
+                        <option class="dropdown-item drop-1" value="Maldives">Maldives</option>
+                        <option class="dropdown-item drop-1" value="Mali">Mali</option>
+                        <option class="dropdown-item drop-1" value="Malta">Malta</option>
+                        <option class="dropdown-item drop-1" value="Marshall Islands">Marshall Islands</option>
+                        <option class="dropdown-item drop-1" value="Martinique">Martinique</option>
+                        <option class="dropdown-item drop-1" value="Mauritania">Mauritania</option>
+                        <option class="dropdown-item drop-1" value="Mauritius">Mauritius</option>
+                        <option class="dropdown-item drop-1" value="Mayotte">Mayotte</option>
+                        <option class="dropdown-item drop-1" value="Mexico">Mexico</option>
+                        <option class="dropdown-item drop-1" value="Midway Islands">Midway Islands</option>
+                        <option class="dropdown-item drop-1" value="Moldova">Moldova</option>
+                        <option class="dropdown-item drop-1" value="Monaco">Monaco</option>
+                        <option class="dropdown-item drop-1" value="Mongolia">Mongolia</option>
+                        <option class="dropdown-item drop-1" value="Montserrat">Montserrat</option>
+                        <option class="dropdown-item drop-1" value="Morocco">Morocco</option>
+                        <option class="dropdown-item drop-1" value="Mozambique">Mozambique</option>
+                        <option class="dropdown-item drop-1" value="Myanmar">Myanmar</option>
+                        <option class="dropdown-item drop-1" value="Nambia">Nambia</option>
+                        <option class="dropdown-item drop-1" value="Nauru">Nauru</option>
+                        <option class="dropdown-item drop-1" value="Nepal">Nepal</option>
+                        <option class="dropdown-item drop-1" value="Netherland Antilles">Netherland Antilles</option>
+                        <option class="dropdown-item drop-1" value="Netherlands">Netherlands (Holland, Europe)</option>
+                        <option class="dropdown-item drop-1" value="Nevis">Nevis</option>
+                        <option class="dropdown-item drop-1" value="New Caledonia">New Caledonia</option>
+                        <option class="dropdown-item drop-1" value="New Zealand">New Zealand</option>
+                        <option class="dropdown-item drop-1" value="Nicaragua">Nicaragua</option>
+                        <option class="dropdown-item drop-1" value="Niger">Niger</option>
+                        <option class="dropdown-item drop-1" value="Nigeria">Nigeria</option>
+                        <option class="dropdown-item drop-1" value="Niue">Niue</option>
+                        <option class="dropdown-item drop-1" value="Norfolk Island">Norfolk Island</option>
+                        <option class="dropdown-item drop-1" value="Norway">Norway</option>
+                        <option class="dropdown-item drop-1" value="Oman">Oman</option>
+                        <option class="dropdown-item drop-1" value="Pakistan">Pakistan</option>
+                        <option class="dropdown-item drop-1" value="Palau Island">Palau Island</option>
+                        <option class="dropdown-item drop-1" value="Palestine">Palestine</option>
+                        <option class="dropdown-item drop-1" value="Panama">Panama</option>
+                        <option class="dropdown-item drop-1" value="Papua New Guinea">Papua New Guinea</option>
+                        <option class="dropdown-item drop-1" value="Paraguay">Paraguay</option>
+                        <option class="dropdown-item drop-1" value="Peru">Peru</option>
+                        <option class="dropdown-item drop-1" value="Phillipines">Philippines</option>
+                        <option class="dropdown-item drop-1" value="Pitcairn Island">Pitcairn Island</option>
+                        <option class="dropdown-item drop-1" value="Poland">Poland</option>
+                        <option class="dropdown-item drop-1" value="Portugal">Portugal</option>
+                        <option class="dropdown-item drop-1" value="Puerto Rico">Puerto Rico</option>
+                        <option class="dropdown-item drop-1" value="Qatar">Qatar</option>
+                        <option class="dropdown-item drop-1" value="Republic of Montenegro">Republic of Montenegro</option>
+                        <option class="dropdown-item drop-1" value="Republic of Serbia">Republic of Serbia</option>
+                        <option class="dropdown-item drop-1" value="Reunion">Reunion</option>
+                        <option class="dropdown-item drop-1" value="Romania">Romania</option>
+                        <option class="dropdown-item drop-1" value="Russia">Russia</option>
+                        <option class="dropdown-item drop-1" value="Rwanda">Rwanda</option>
+                        <option class="dropdown-item drop-1" value="St Barthelemy">St Barthelemy</option>
+                        <option class="dropdown-item drop-1" value="St Eustatius">St Eustatius</option>
+                        <option class="dropdown-item drop-1" value="St Helena">St Helena</option>
+                        <option class="dropdown-item drop-1" value="St Kitts-Nevis">St Kitts-Nevis</option>
+                        <option class="dropdown-item drop-1" value="St Lucia">St Lucia</option>
+                        <option class="dropdown-item drop-1" value="St Maarten">St Maarten</option>
+                        <option class="dropdown-item drop-1" value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                        <option class="dropdown-item drop-1" value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                        <option class="dropdown-item drop-1" value="Saipan">Saipan</option>
+                        <option class="dropdown-item drop-1" value="Samoa">Samoa</option>
+                        <option class="dropdown-item drop-1" value="Samoa American">Samoa American</option>
+                        <option class="dropdown-item drop-1" value="San Marino">San Marino</option>
+                        <option class="dropdown-item drop-1" value="Sao Tome & Principe">Sao Tome & Principe</option>
+                        <option class="dropdown-item drop-1" value="Saudi Arabia">Saudi Arabia</option>
+                        <option class="dropdown-item drop-1" value="Senegal">Senegal</option>
+                        <option class="dropdown-item drop-1" value="Seychelles">Seychelles</option>
+                        <option class="dropdown-item drop-1" value="Sierra Leone">Sierra Leone</option>
+                        <option class="dropdown-item drop-1" value="Singapore">Singapore</option>
+                        <option class="dropdown-item drop-1" value="Slovakia">Slovakia</option>
+                        <option class="dropdown-item drop-1" value="Slovenia">Slovenia</option>
+                        <option class="dropdown-item drop-1" value="Solomon Islands">Solomon Islands</option>
+                        <option class="dropdown-item drop-1" value="Somalia">Somalia</option>
+                        <option class="dropdown-item drop-1" value="South Africa">South Africa</option>
+                        <option class="dropdown-item drop-1" value="Spain">Spain</option>
+                        <option class="dropdown-item drop-1" value="Sri Lanka">Sri Lanka</option>
+                        <option class="dropdown-item drop-1" value="Sudan">Sudan</option>
+                        <option class="dropdown-item drop-1" value="Suriname">Suriname</option>
+                        <option class="dropdown-item drop-1" value="Swaziland">Swaziland</option>
+                        <option class="dropdown-item drop-1" value="Sweden">Sweden</option>
+                        <option class="dropdown-item drop-1" value="Switzerland">Switzerland</option>
+                        <option class="dropdown-item drop-1" value="Syria">Syria</option>
+                        <option class="dropdown-item drop-1" value="Tahiti">Tahiti</option>
+                        <option class="dropdown-item drop-1" value="Taiwan">Taiwan</option>
+                        <option class="dropdown-item drop-1" value="Tajikistan">Tajikistan</option>
+                        <option class="dropdown-item drop-1" value="Tanzania">Tanzania</option>
+                        <option class="dropdown-item drop-1" value="Thailand">Thailand</option>
+                        <option class="dropdown-item drop-1" value="Togo">Togo</option>
+                        <option class="dropdown-item drop-1" value="Tokelau">Tokelau</option>
+                        <option class="dropdown-item drop-1" value="Tonga">Tonga</option>
+                        <option class="dropdown-item drop-1" value="Trinidad & Tobago">Trinidad & Tobago</option>
+                        <option class="dropdown-item drop-1" value="Tunisia">Tunisia</option>
+                        <option class="dropdown-item drop-1" value="Turkey">Turkey</option>
+                        <option class="dropdown-item drop-1" value="Turkmenistan">Turkmenistan</option>
+                        <option class="dropdown-item drop-1" value="Turks & Caicos Is">Turks & Caicos Is</option>
+                        <option class="dropdown-item drop-1" value="Tuvalu">Tuvalu</option>
+                        <option class="dropdown-item drop-1" value="Uganda">Uganda</option>
+                        <option class="dropdown-item drop-1" value="United Kingdom">United Kingdom</option>
+                        <option class="dropdown-item drop-1" value="Ukraine">Ukraine</option>
+                        <option class="dropdown-item drop-1" value="United Arab Erimates">United Arab Emirates</option>
+                        <option class="dropdown-item drop-1" value="United States of America">United States of America</option>
+                        <option class="dropdown-item drop-1" value="Uraguay">Uruguay</option>
+                        <option class="dropdown-item drop-1" value="Uzbekistan">Uzbekistan</option>
+                        <option class="dropdown-item drop-1" value="Vanuatu">Vanuatu</option>
+                        <option class="dropdown-item drop-1" value="Vatican City State">Vatican City State</option>
+                        <option class="dropdown-item drop-1" value="Venezuela">Venezuela</option>
+                        <option class="dropdown-item drop-1" value="Vietnam">Vietnam</option>
+                        <option class="dropdown-item drop-1" value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                        <option class="dropdown-item drop-1" value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                        <option class="dropdown-item drop-1" value="Wake Island">Wake Island</option>
+                        <option class="dropdown-item drop-1" value="Wallis & Futana Is">Wallis & Futana Is</option>
+                        <option class="dropdown-item drop-1" value="Yemen">Yemen</option>
+                        <option class="dropdown-item drop-1" value="Zaire">Zaire</option>
+                        <option class="dropdown-item drop-1" value="Zambia">Zambia</option>
+                        <option class="dropdown-item drop-1" value="Zimbabwe">Zimbabwe</option>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <hr class="mx-n3">
+              <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Company:</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="input-2" name="company" value=" " aria-label="Text input with dropdown button" required>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
+                      <div class="dropdown-menu droplist-2">
+                        <option class="dropdown-item drop-2" value="Google">Google</option>
+                        <option class="dropdown-item drop-2" value="Microsoft">Microsoft</option>
+                        <option class="dropdown-item drop-2" value="Amazon">Amazon</option>
+                        <option class="dropdown-item drop-2" value="Netflix">Netflix</option>
+                        <option class="dropdown-item drop-2" value="AMCH">AMCH</option>
+                        <option class="dropdown-item drop-2" value="Salesforce">Salesforce</option>
+                        <option class="dropdown-item drop-2" value="DE Shaw">DE Shaw</option>
+                        <option class="dropdown-item drop-2" value="Wipro">Wipro</option>
+                        <option class="dropdown-item drop-2" value="KPMG">KPMG</option>
+                        <option class="dropdown-item drop-2" value="Nagarro">Nagarro</option>
+                        <option class="dropdown-item drop-2" value="E&Y">E&Y</option>
+
+
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <hr class="mx-n3">
+
+
+
+
+
+              <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Job Role:</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="input-3" name="role" aria-label="Text input with dropdown button" required/>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
+                      <div class="dropdown-menu droplist-3">
+                        <option class="dropdown-item drop-3" value="Analyst">Analyst</option>
+                        <option class="dropdown-item drop-3" value="Associate Analyst">Associate Analyst</option>
+                        <option class="dropdown-item drop-3" value="Application Developer">Application Developer</option>
+                        <option class="dropdown-item drop-3" value="Chief-Executive">Chief-Executive</option>
+                        <option class="dropdown-item drop-3" value="Java-Developer">Java-Developer</option>
+                        <option class="dropdown-item drop-3" value="Manager">Manager</option>
+                        <option class="dropdown-item drop-3" value="Net-Developer">Net-Developer</option>
+                        <option class="dropdown-item drop-3" value="Senior-Java-Developer">Senior Java Developer</option>
+                        <option class="dropdown-item drop-3" value="Software-Engineer">Software Engineer</option>
+                        <option class="dropdown-item drop-3" value="Staff-Assistant">Staff-Assistant</option>
+                        <option class="dropdown-item drop-3" value="Web-Developer">Web-Developer</option>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <hr class="mx-n3">
+
+              <div class="row align-items-center py-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Job Description:</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+                  <textarea class="form-control" rows="3" placeholder="Message sent to the employer"></textarea>
+
+                </div>
+              </div>
+
+              <hr class="mx-n3">
+
+
+
+              <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Work Experience:</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="input-4" name="experience" aria-label="Text input with dropdown button" required/>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
+                      <div class="dropdown-menu">
+                        <option class="dropdown-item drop-4" value="Less than 1 year">Less than 1 year</option>
+                        <option class="dropdown-item drop-4" value="Greater than 1 and lesser than 3">Greater than 1 and lesser than 3</option>
+                        <option class="dropdown-item drop-4" value="More than 3 years">More than 3 years</option>
+                        <option class="dropdown-item drop-4" value="No Work Experience">No Work Experience</option>
+
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <hr class="mx-n3">
+
+              <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Expected Salary Range:</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="input-5" name="salary" aria-label="Text input with dropdown button" required/>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
+                      <div class="dropdown-menu">
+                        <option class="dropdown-item drop-5" value="Rs. 3,00,000-4,50,000">3,00,000-4,50,000</option>
+                        <option class="dropdown-item drop-5" value="Rs. 4,50,000-6,50,000">4,50,000-6,50,000</option>
+                        <option class="dropdown-item drop-5" value="Rs. 6,50,000-10,00,000">6,50,000-10,00,000</option>
+                        <option class="dropdown-item drop-5" value="Rs. 10,00,000-18,00,000">10,00,000-18,00,000</option>
+                        <option class="dropdown-item drop-5" value="Greater than 18 lacs">>18,00,000</option>
+
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <hr class="mx-n3">
+
+              <!-- <div class="row align-items-center py-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Email address</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+                  <input type="email" class="form-control form-control-lg" placeholder="example@example.com" />
+
+                </div>
+              </div>
+
+
+
+              <hr class="mx-n3"> -->
+
+              <div class="row align-items-center py-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Upload CV</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+                  <input class="form-control form-control-lg input-6" id="formFileLg" name="filename" type="file"  accept="application/pdf,application/doc,application/docx" required/>
+               <!-- <input type="button" name="" class="upload" value="Upload" /> -->
+
+                  <div class="small text-muted mt-2 uploadtext">Upload your CV/Resume or any other relevant file. Max file size 10 MB</div>
+
+                </div>
+              </div>
+
+              <hr class="mx-n3">
+
+
+
+
+              <div class="px-5 py-4">
+
+
+                 <a class="btn" href="E:/Web-Development/internshala/success.html"></a>
+                <button type="submit" class="btn btn-primary btn-lg sendapplication" >Send application</button>
+
+              </div>
+
+            </div>
+          </div>
+  </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script/details.js" charset="utf-8"></script>
+</body>
+
+</html>
